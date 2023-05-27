@@ -20,6 +20,7 @@ S.O.L.I.D., yazılım geliştirme prensiplerinin bir akronimidir. Bu prensipler,
 
 
 
+
 # ✨ S.O.L.I.D. Nedir? 
 
 
@@ -55,7 +56,9 @@ S.O.L.I.D. prensipleri, kodun daha temiz, sürdürülebilir, genişletilebilir v
 
 Tek Sorumluluk Prensibi (Single Responsibility Principle - SRP), nesne yönelimli programlamada önemli bir prensiptir. Bu prensibe göre, bir sınıfın yalnızca bir sorumluluğu olmalı ve bu sorumluluğu en iyi şekilde yerine getirmelidir.
 Tek Sorumluluk Prensibi, bir sınıfın birden fazla sorumluluğu üstlenmesinin dezavantajlarını ortadan kaldırmayı amaçlar. Bir sınıfın birden fazla sorumluluğu olduğunda, bu sınıfın değişikliklere karşı daha kırılgan hale gelme olasılığı artar. İçerdiği birden fazla sorumluluk nedeniyle, bir sorumlulukta yapılan değişiklikler diğer sorumlulukları etkileyebilir ve beklenmedik yan etkilere neden olabilir.
-SRP'nin temel faydaları şunlardır:
+
+➕ **SRP'nin temel faydaları şunlardır:**
+
 1.	📦 **Daha iyi kod organizasyonu:** 
 Tek Sorumluluk Prensibi, kodu daha iyi organize etmeyi sağlar. Bir sınıfın yalnızca belirli bir sorumluluğu olduğunda, kod daha anlaşılır, okunabilir ve sürdürülebilir hale gelir. Sınıfın ismi ve yapısı, sorumluluğunu doğru şekilde yansıtır.
 
@@ -71,7 +74,7 @@ Tek Sorumluluk Prensibi, kodun daha test edilebilir olmasını sağlar. Bir sın
 Örneğin, bir Müşteri sınıfını düşünelim. Müşteri sınıfının sorumlulukları müşteri bilgilerini tutmak, hesap işlemlerini yapmak ve e-posta göndermek olabilir. Ancak, bu sınıfın birden fazla sorumluluğu olduğunda, değişiklik yapmak veya hata ayıklamak zorlaşabilir.
 Tek Sorumluluk Prensibi'ne göre, bu sorumluluklar ayrı sınıflara ayrılmalıdır. Örneğin, MüşteriBilgileri sınıfı müşteri bilgilerini tutarken, HesapIslemleri sınıfı hesap işlemlerini yapabilir ve EpostaGonderici sınıfı e-posta gönderme işlemlerinden sorumlu olabilir. Her bir sınıf yalnızca tek bir sorumluluğa odaklanır ve bu sorumluluğu en iyi şekilde yerine getirir.
 
-Bu yaklaşımın faydaları şunlardır:
+➕ **Bu yaklaşımın faydaları şunlardır:**
 
 •	Sınıflar arasındaki bağımlılıklar azalır ve değişikliklerin etki alanı daralır.
 
@@ -143,7 +146,6 @@ Prensibin temel fikri, mevcut kodu değiştirmeden yeni gereksinimlere uyum sağ
  Mevcut kodda bir değişiklik yapmak, değişiklikleri uyguladığınız sınıfın kaynak kodunu değiştirmenizi gerektirmez. Mevcut kodun çalışmasını etkilemeden yeni işlevselliği eklemek için mevcut kodun kapalı olması gerekmektedir.
 
 2.	📦 **Yeni işlevselliğe açık (Open) olma:**
-
  Yeni gereksinimler ortaya çıktığında, mevcut kodu değiştirmeden yeni işlevselliği eklemek mümkün olmalıdır. Bu genellikle sınıfın genişletilebilir olmasıyla sağlanır. Yeni gereksinimler, mevcut kodun etkilenmediği yeni sınıflar veya modüller kullanılarak gerçekleştirilir.
 
 3.	📦 **Soyutlamalar (Abstractions) kullanma:**
@@ -164,11 +166,11 @@ Prensibin temel fikri, mevcut kodu değiştirmeden yeni gereksinimlere uyum sağ
 
 ➕ **Açık Kapalılık Prensibi'nin uygulanması, genellikle aşağıdaki yaklaşımları içerir:**
 
-•	Soyutlama kullanımı: Soyutlama, kodun genişletilebilirliğini sağlamak için önemlidir. Soyut sınıflar veya arayüzler tanımlanarak, genel davranışlar ve özellikler belirlenir. Yeni gereksinimler için bu soyutlamaları uygulayan yeni sınıflar oluşturulabilir.
+•	**Soyutlama kullanımı:** Soyutlama, kodun genişletilebilirliğini sağlamak için önemlidir. Soyut sınıflar veya arayüzler tanımlanarak, genel davranışlar ve özellikler belirlenir. Yeni gereksinimler için bu soyutlamaları uygulayan yeni sınıflar oluşturulabilir.
 
-•	Polimorfizm kullanımı: Polimorfizm, farklı sınıfların aynı arayüzü uygulayabilmesini sağlar. Bu, mevcut kodun yeni sınıflarla genişletilebilmesini ve farklı davranışların elde edilebilmesini sağlar.
+•	**Polimorfizm kullanımı:** Polimorfizm, farklı sınıfların aynı arayüzü uygulayabilmesini sağlar. Bu, mevcut kodun yeni sınıflarla genişletilebilmesini ve farklı davranışların elde edilebilmesini sağlar.
 
-•	Tasarım desenlerinin kullanımı: Açık Kapalılık Prensibi, tasarım desenlerinin uygulanmasıyla desteklenir. Özellikle, Strateji Deseni, Fabrika Deseni ve Yönlendirici (Router) Deseni gibi desenler, yeni işlevselliği eklemek için mevcut kodu değiştirmeden uygulanabilir.
+•	**Tasarım desenlerinin kullanımı:** Açık Kapalılık Prensibi, tasarım desenlerinin uygulanmasıyla desteklenir. Özellikle, Strateji Deseni, Fabrika Deseni ve Yönlendirici (Router) Deseni gibi desenler, yeni işlevselliği eklemek için mevcut kodu değiştirmeden uygulanabilir.
 
 Açık Kapalılık Prensibi, kodun daha esnek, sürdürülebilir ve genişletilebilir olmasını sağlar. Bu prensibi uygulayarak, gelecekteki değişikliklere daha kolay uyum sağlayabilir ve yazılımınızı daha kaliteli hale getirebilirsiniz.
 
@@ -272,7 +274,7 @@ LSP'nin temel amacı, bir kod parçasının bir sınıfın yerine geçen herhang
 
 •	Takım çalışmasını kolaylaştırır. LSP, birden fazla geliştiricinin aynı projede çalışmasını kolaylaştırır. Bir geliştirici, üst sınıflara bağlı olarak kod yazabilirken, başka bir geliştirici de bu üst sınıfları temsil eden alt sınıflar üzerinde çalışabilir.
 
-LSP'nin uygulanması için bazı temel stratejiler şunlardır:
+➕ **LSP'nin uygulanması için bazı temel stratejiler şunlardır:**
 
 •	İnterface veya Soyut Sınıflar kullanma: Üst sınıfın davranışlarını tanımlayan interface'ler veya soyut sınıflar kullanarak LSP'yi uygulayabilirsiniz. Türetilen sınıflar bu interface'leri veya soyut sınıfları uygulayarak aynı sözleşmeyi yerine getirir ve yerlerine geçebilir.
 
@@ -368,23 +370,23 @@ ISP, bir arayüzün birçok küçük ve özelleştirilmiş arayüzlere bölünme
 
 ➕ **ISP'nin uygulanması için bazı temel stratejiler şunlardır:**
 
-•	Arayüzleri bölme: Geniş arayüzleri daha küçük ve daha özelleştirilmiş arayüzlere bölerek, her sınıfın yalnızca ihtiyaç duyduğu arayüzleri uygulamasını sağlayabilirsiniz.
+•	**Arayüzleri bölme:** Geniş arayüzleri daha küçük ve daha özelleştirilmiş arayüzlere bölerek, her sınıfın yalnızca ihtiyaç duyduğu arayüzleri uygulamasını sağlayabilirsiniz.
 
-•	Arayüzleri birleştirme: Benzer özelliklere sahip olan arayüzleri birleştirerek, gereksiz tekrarları önleyebilirsiniz. Bu sayede sınıflar, yalnızca bir arayüzü uygulayarak ihtiyaç duydukları işlevselliği elde edebilirler.
+•	**Arayüzleri birleştirme:** Benzer özelliklere sahip olan arayüzleri birleştirerek, gereksiz tekrarları önleyebilirsiniz. Bu sayede sınıflar, yalnızca bir arayüzü uygulayarak ihtiyaç duydukları işlevselliği elde edebilirler.
 
-•	Arayüz ayırımıyla bağımlılıkları kontrol etme: Sınıfların yalnızca ihtiyaç duydukları arayüzleri kullanmalarını sağlayarak, bağımlılıkları azaltabilirsiniz. Bu, sınıfların değişikliklere daha esnek bir şekilde uyum sağlamasını ve kodun bakımını kolaylaştırır.
+•	**Arayüz ayırımıyla bağımlılıkları kontrol etme:** Sınıfların yalnızca ihtiyaç duydukları arayüzleri kullanmalarını sağlayarak, bağımlılıkları azaltabilirsiniz. Bu, sınıfların değişikliklere daha esnek bir şekilde uyum sağlamasını ve kodun bakımını kolaylaştırır.
 
-•	İstemci odaklı arayüzler tasarlama: Arayüzleri, istemci kodunun ihtiyaçlarını karşılayacak şekilde tasarlayın. İstemci, yalnızca kendi ihtiyaçlarına uygun metotları kullanabilmelidir. Bu, istemci kodunun daha anlaşılır ve daha az karmaşık olmasını sağlar.
+•	**İstemci odaklı arayüzler tasarlama:** Arayüzleri, istemci kodunun ihtiyaçlarını karşılayacak şekilde tasarlayın. İstemci, yalnızca kendi ihtiyaçlarına uygun metotları kullanabilmelidir. Bu, istemci kodunun daha anlaşılır ve daha az karmaşık olmasını sağlar.
 
 ➕ **ISP'nin faydaları şunlardır:**
 
-•	Bağımlılıkları azaltır: ISP, sınıfların gereksiz bağımlılıklardan kaçınmasını sağlar. Böylece, sınıfların değişikliklere daha dirençli olmaları ve daha kolay test edilebilir olmaları sağlanır.
+•	**Bağımlılıkları azaltır:** ISP, sınıfların gereksiz bağımlılıklardan kaçınmasını sağlar. Böylece, sınıfların değişikliklere daha dirençli olmaları ve daha kolay test edilebilir olmaları sağlanır.
 
-•	Kodun anlaşılırlığını artırır: Sınıfların yalnızca ihtiyaç duydukları metotları içeren arayüzleri uygulaması, kodun daha anlaşılır ve daha kolay takip edilebilir olmasını sağlar.
+•	**Kodun anlaşılırlığını artırır:** Sınıfların yalnızca ihtiyaç duydukları metotları içeren arayüzleri uygulaması, kodun daha anlaşılır ve daha kolay takip edilebilir olmasını sağlar.
 
-•	Yeniden kullanılabilirliği artırır: Özelleştirilmiş arayüzlerin kullanılması, sınıfların daha bağımsız ve yeniden kullanılabilir olmasını sağlar. Böylece, bir sınıfın farklı bağlamlarda kullanılması daha kolay hale gelir.
+•	**Yeniden kullanılabilirliği artırır:** Özelleştirilmiş arayüzlerin kullanılması, sınıfların daha bağımsız ve yeniden kullanılabilir olmasını sağlar. Böylece, bir sınıfın farklı bağlamlarda kullanılması daha kolay hale gelir.
 
-•	Paralel geliştirmeyi kolaylaştırır: Küçük ve özelleştirilmiş arayüzler, farklı geliştiricilerin aynı anda çalışmasını kolaylaştırır. Her geliştirici, ihtiyaç duyduğu arayüzleri kullanarak bağımsız olarak çalışabilir.
+•	**Paralel geliştirmeyi kolaylaştırır:** Küçük ve özelleştirilmiş arayüzler, farklı geliştiricilerin aynı anda çalışmasını kolaylaştırır. Her geliştirici, ihtiyaç duyduğu arayüzleri kullanarak bağımsız olarak çalışabilir.
 
 ISP prensibi, sınıfların ihtiyaçlarına uygun arayüzleri kullanmalarını ve gereksiz bağımlılıklardan kaçınmalarını sağlar. Bu, kodun daha modüler, esnek ve sürdürülebilir olmasını sağlar. ISP'nin doğru bir şekilde uygulanması aşağıdaki avantajlara sahiptir:
 
