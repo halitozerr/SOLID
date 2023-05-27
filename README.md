@@ -18,6 +18,7 @@ S.O.L.I.D., yazılım geliştirme prensiplerinin bir akronimidir. Bu prensipler,
 
 
 
+
 # ✨ S.O.L.I.D. Nedir? 
 
 
@@ -54,26 +55,32 @@ S.O.L.I.D. prensipleri, kodun daha temiz, sürdürülebilir, genişletilebilir v
 Tek Sorumluluk Prensibi (Single Responsibility Principle - SRP), nesne yönelimli programlamada önemli bir prensiptir. Bu prensibe göre, bir sınıfın yalnızca bir sorumluluğu olmalı ve bu sorumluluğu en iyi şekilde yerine getirmelidir.
 Tek Sorumluluk Prensibi, bir sınıfın birden fazla sorumluluğu üstlenmesinin dezavantajlarını ortadan kaldırmayı amaçlar. Bir sınıfın birden fazla sorumluluğu olduğunda, bu sınıfın değişikliklere karşı daha kırılgan hale gelme olasılığı artar. İçerdiği birden fazla sorumluluk nedeniyle, bir sorumlulukta yapılan değişiklikler diğer sorumlulukları etkileyebilir ve beklenmedik yan etkilere neden olabilir.
 SRP'nin temel faydaları şunlardır:
-1.	📦**Daha iyi kod organizasyonu:** 
+1.	📦 **Daha iyi kod organizasyonu:** 
 Tek Sorumluluk Prensibi, kodu daha iyi organize etmeyi sağlar. Bir sınıfın yalnızca belirli bir sorumluluğu olduğunda, kod daha anlaşılır, okunabilir ve sürdürülebilir hale gelir. Sınıfın ismi ve yapısı, sorumluluğunu doğru şekilde yansıtır.
 
-2.	📦**Daha az bağımlılık:** 
+2.	📦 **Daha az bağımlılık:** 
 Bir sınıfın birden fazla sorumluluğu olduğunda, bu sınıf diğer sınıflarla daha sıkı bir şekilde bağlantılı hale gelir. Bu da bağımlılıkları artırır ve kodun yeniden kullanılabilirliğini zorlaştırır. Tek Sorumluluk Prensibi, sınıflar arasındaki bağımlılıkları azaltarak, bağımsız ve birbirinden bağımsız bileşenlerin oluşturulmasını sağlar.
 
-3.	📦**Kolay sürdürme ve değiştirme:** 
+3.	📦 **Kolay sürdürme ve değiştirme:** 
 Sınıfların tek bir sorumluluğu olduğunda, bu sınıfları sürdürmek ve değiştirmek daha kolay olur. Bir sorumlulukta yapılan değişiklikler, diğer sorumlulukları etkilemez ve beklenmedik hatalara neden olmaz. Kodunuzda değişiklik yapmanız gerektiğinde, yalnızca ilgili sınıfı etkileyen değişiklikler yapmanız yeterlidir.
 
-4.	📦**Test edilebilirlik:** 
+4.	📦 **Test edilebilirlik:** 
 Tek Sorumluluk Prensibi, kodun daha test edilebilir olmasını sağlar. Bir sınıfın yalnızca bir sorumluluğu olduğunda, bu sorumluluğa odaklanarak daha küçük ve daha özgün test senaryoları oluşturmak daha kolaydır.
 
 Örneğin, bir Müşteri sınıfını düşünelim. Müşteri sınıfının sorumlulukları müşteri bilgilerini tutmak, hesap işlemlerini yapmak ve e-posta göndermek olabilir. Ancak, bu sınıfın birden fazla sorumluluğu olduğunda, değişiklik yapmak veya hata ayıklamak zorlaşabilir.
 Tek Sorumluluk Prensibi'ne göre, bu sorumluluklar ayrı sınıflara ayrılmalıdır. Örneğin, MüşteriBilgileri sınıfı müşteri bilgilerini tutarken, HesapIslemleri sınıfı hesap işlemlerini yapabilir ve EpostaGonderici sınıfı e-posta gönderme işlemlerinden sorumlu olabilir. Her bir sınıf yalnızca tek bir sorumluluğa odaklanır ve bu sorumluluğu en iyi şekilde yerine getirir.
+
 Bu yaklaşımın faydaları şunlardır:
+
 •	Sınıflar arasındaki bağımlılıklar azalır ve değişikliklerin etki alanı daralır.
+
 •	Kod daha modüler hale gelir, böylece her bir sınıfı bağımsız olarak geliştirebilir, test edebilir ve sürdürebilirsiniz.
+
 •	İlgili sınıfların tek sorumluluğu olduğu için, kod daha anlaşılır ve bakımı daha kolay hale gelir.
+
 •	Birden fazla sorumluluğu olan bir sınıf yerine, daha küçük ve özgün sınıfların kullanılması, kodun yeniden kullanılabilirliğini artırır ve kod tekrarını azaltır.
-Tek Sorumluluk Prensibi, yazılım geliştirme sürecinde temiz kod yazmaya ve düzenli bir yapı oluşturmaya yardımcı olur. Bu prensibi uygulayarak, kodunuzun daha sürdürülebilir, esnek ve anlaşılabilir olmasını sağlayabilirsiniz.
+
+--Tek Sorumluluk Prensibi, yazılım geliştirme sürecinde temiz kod yazmaya ve düzenli bir yapı oluşturmaya yardımcı olur. Bu prensibi uygulayarak, kodunuzun daha sürdürülebilir, esnek ve anlaşılabilir olmasını sağlayabilirsiniz.
 
 
 ## ⌨️ Kullanım/Örnek 
