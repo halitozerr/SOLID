@@ -19,6 +19,7 @@ S.O.L.I.D., yazılım geliştirme prensiplerinin bir akronimidir. Bu prensipler,
 
 
 
+
 # ✨ S.O.L.I.D. Nedir? 
 
 
@@ -135,15 +136,17 @@ public class Program
 Açık Kapalılık Prensibi (Open-Closed Principle - OCP), nesne yönelimli programlamada önemli bir prensiptir. Bu prensibe göre, mevcut kodu değiştirmeden yeni işlevselliği eklemek mümkün olmalıdır. Yani, bir sınıfın davranışını değiştirmek için sınıfın kendisini değiştirmek yerine, yeni davranışları eklemek için sınıfın genişletilebilir olması gerekmektedir.
 Açık Kapalılık Prensibi, yazılım bileşenlerinin genişletilebilir olmasını ve değişikliklere karşı kapalı olmasını hedefler. Bu prensip, kodun esnekliğini ve sürdürülebilirliğini artırır.
 Prensibin temel fikri, mevcut kodu değiştirmeden yeni gereksinimlere uyum sağlamaktır. Bu, mevcut sınıfların işlevselliğini korurken, yeni gereksinimleri karşılamak için yeni sınıflar veya modüller ekleyebileceğimiz anlamına gelir.
-Açık Kapalılık Prensibi'nin bazı anahtar noktaları şunlardır:
-1.	📦**Değişikliklere kapalı (Closed) olma:**
+
+➕ **Açık Kapalılık Prensibi'nin bazı anahtar noktaları şunlardır:**
+
+1.	📦 **Değişikliklere kapalı (Closed) olma:**
  Mevcut kodda bir değişiklik yapmak, değişiklikleri uyguladığınız sınıfın kaynak kodunu değiştirmenizi gerektirmez. Mevcut kodun çalışmasını etkilemeden yeni işlevselliği eklemek için mevcut kodun kapalı olması gerekmektedir.
 
-2.	📦**Yeni işlevselliğe açık (Open) olma:**
+2.	📦 **Yeni işlevselliğe açık (Open) olma:**
 
  Yeni gereksinimler ortaya çıktığında, mevcut kodu değiştirmeden yeni işlevselliği eklemek mümkün olmalıdır. Bu genellikle sınıfın genişletilebilir olmasıyla sağlanır. Yeni gereksinimler, mevcut kodun etkilenmediği yeni sınıflar veya modüller kullanılarak gerçekleştirilir.
 
-3.	📦**Soyutlamalar (Abstractions) kullanma:**
+3.	📦 **Soyutlamalar (Abstractions) kullanma:**
  Açık Kapalılık Prensibi'ni uygulamak için soyutlamalar (abstractions) kullanılır. Soyutlama, ortak davranışları ve özellikleri tanımlayan arayüzleri veya soyut sınıfları içerir. Bu sayede, yeni işlevselliği eklemek için bu soyutlamaları uygulayan yeni sınıflar oluşturulabilir.
 
 
