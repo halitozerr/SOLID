@@ -10,7 +10,7 @@ S.O.L.I.D., yazılım geliştirme prensiplerinin bir akronimidir. Bu prensipler,
 ## Konular
 
  - [S.O.L.I.D. Nedir?](https://github.com/halitozerr/solid)
- - [S - Tek Sorumluluk Prensibi (Single Responsibility Principle):](https://github.com/matiassingers/awesome-readme)
+ - [S - Tek Sorumluluk Prensibi (Single Responsibility Principle):](https://github.com/halitozerr/solid)
  - [O - Açık Kapalılık Prensibi (Open-Closed Principle): ](https://github.com/halitozerr/solid)
  - [L - Liskov Yerine Geçme Prensibi (Liskov Substitution Principle): ](https://github.com/halitozerr/solid)
  - [I - Arayüz Ayrımı Prensibi (Interface Segregation Principle): ](https://github.com/halitozerr/solid)
